@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "94e54770-4856-4559-9759-a50a4531fd4d",
+		"name": "x-ray",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "35147848"
+	},
+	"item": [
+		{
+			"name": "get single device",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/x-ray/{{id}}"
+			},
+			"response": []
+		},
+		{
+			"name": "add device",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"device_data\": [\n        {\n            \"time\": 98989,\n            \"coordinates\": {\n                \"x-coordination\": 99,\n                \"y-coordination\": 56,\n                \"speed\": 97\n            }\n        },\n        {\n            \"time\": 98989,\n            \"coordinates\": {\n                \"x-coordination\": 99,\n                \"y-coordination\": 56,\n                \"speed\": 97\n            }\n        },\n        {\n            \"time\": 98989,\n            \"coordinates\": {\n                \"x-coordination\": 99,\n                \"y-coordination\": 56,\n                \"speed\": 97\n            }\n        }\n    ],\n    \"time_stamp\": 4444444444,\n    \"device_id\": \"76776f76f76d7\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/x-ray"
+			},
+			"response": []
+		},
+		{
+			"name": "add device",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"device_data\": [\n        {\n            \"time\": 98989,\n            \"coordinates\": {\n                \"x-coordination\": 99,\n                \"y-coordination\": 56,\n                \"speed\": 97\n            }\n        },\n        {\n            \"time\": 98989,\n            \"coordinates\": {\n                \"x-coordination\": 99,\n                \"y-coordination\": 56,\n                \"speed\": 97\n            }\n        },\n        {\n            \"time\": 98989,\n            \"coordinates\": {\n                \"x-coordination\": 99,\n                \"y-coordination\": 56,\n                \"speed\": 97\n            }\n        }\n    ],\n    \"time_stamp\": 4444444444,\n    \"device_id\": \"76776f76f76d7\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/x-ray"
+			},
+			"response": []
+		},
+		{
+			"name": "get all devices",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/x-ray?limit=1&page=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"x-ray"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "1"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete a device",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:3000/x-ray/{{is}}"
+			},
+			"response": []
+		}
+	]
+}
